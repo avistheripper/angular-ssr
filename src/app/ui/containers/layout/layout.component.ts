@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-layout',
   template: `
     <app-header></app-header>
-    <div class="container mb-5 pb-5">
+    <div class="container my-5 py-5">
     <router-outlet></router-outlet>
     </div>
     <app-footer></app-footer>
@@ -12,6 +12,9 @@ import { Component, OnInit } from '@angular/core';
   styles: [`
     h1 {
       color: hotpink
+    }
+    .container {
+      height: 85vh;
     }
   `]
 })

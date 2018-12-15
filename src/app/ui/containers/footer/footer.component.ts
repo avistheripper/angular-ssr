@@ -3,9 +3,11 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-footer',
   template: `
-    <p>
-      footer works!
-    </p>
+  <nav class="navbar navbar-expand navbar-dark bg-dark fixed-botton">
+    <div class="navbar-text m-auto text-white">
+      Copyright &copy; Avistheripper 2018
+    </div>
+  </nav>
   `,
   styles: []
 })

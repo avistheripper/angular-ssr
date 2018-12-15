@@ -6,15 +6,12 @@ import { Component } from '@angular/core';
     <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
       <a routerLink="/" class="navbar-brand">
         <img [attr.src]="logo" [attr.alt]="title" width="130" height="30">
-        {{title}}
       </a>
       <div class="collapse navbar-collapse">
         <div class="navbar-nav">
           <a class="nav-item nav-link"
              *ngFor="let link of Links"
-             [routerLink]="link.url"
-             [routerLinkActive]="active"
-             [routerLinkActiveOptions]="{exact: true}">
+             [routerLink]="link.url">
               {{link.label}}
               </a>
         </div>
