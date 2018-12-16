@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-footer',
   template: `
-  <nav class="navbar navbar-expand navbar-dark bg-dark fixed-botton">
+  <nav class="navbar navbar-expand navbar-dark bg-dark fixed-bottom">
     <div class="navbar-text m-auto text-white">
       Copyright &copy; Avistheripper 2018
     </div>

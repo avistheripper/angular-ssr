@@ -4,7 +4,7 @@ import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
 import { Product } from '../models/product';
 
-const baseUrl = `https://jsonplaceholder.typicode.com/users`;
+const baseUrl = `https://jsonplaceholder.typicode.com/posts`;
 
 @Injectable({
   providedIn: 'root'
