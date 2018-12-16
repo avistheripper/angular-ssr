@@ -10,7 +10,7 @@ import { Product } from '../../models/product';
             {{ product.title }}
         </ng-container>
         <ng-template #link>
-            <a [routerLink]="product.id">More information</a>
+            <a [routerLink]="product.id">Go to {{ product.id }}</a>
         </ng-template>
     </div>
       <div class="card-body" *ngIf="!details">
