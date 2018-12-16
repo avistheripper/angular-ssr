@@ -4,7 +4,7 @@ import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
 import { Product } from '../models/product';
 
-const baseUrl = `${environment.apiUrl}/products`;
+const baseUrl = `https://jsonplaceholder.typicode.com/users`;
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +14,7 @@ export class ProductService {
   public getProducts(): Observable<Product[]> {
     return this.http.get<Product[]>(baseUrl);
   }
-  public getProduct(id:string): Observable<Product> {
+  public getProduct(id: string): Observable<Product> {
     return this.http.get<Product>(`${baseUrl}/${id}`);
   }
 }

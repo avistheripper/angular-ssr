@@ -13,9 +13,6 @@ import { Component, OnInit } from '@angular/core';
     h1 {
       color: hotpink
     }
-    .container {
-      height: 85vh;
-    }
   `]
 })
 export class LayoutComponent implements OnInit {
