@@ -9,6 +9,8 @@ import { Product } from '../models/product';
 export class ProductResolver implements Resolve<Product[]> {
 constructor(private service: ProductService) {}
 resolve() {
+    console.log('asdasdasdasda');
+    
     return this.service.getProducts();
 }
 }

@@ -7,12 +7,12 @@ import { ProductResolver } from './resolvers/product.resolver';
 const routes: Routes = [
   {
     path: '',
-    component: ProductListComponent
+    component: ProductListComponent,
+    resolve: {products: ProductResolver}
   },
   {
     path: ':id',
     component: ProductDetailsComponent,
-    resolve: {products: ProductResolver}
   }
 ];
 

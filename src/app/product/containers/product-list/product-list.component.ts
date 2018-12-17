@@ -19,8 +19,7 @@ export class ProductListComponent implements OnInit {
   ngOnInit() {
     this.route.data.pipe(
       map(data => data['products'])
-    )
-    .subscribe(data => this.products = data);
+    ).subscribe(data => this.products = data);
   }
 
 }
