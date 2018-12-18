@@ -6,9 +6,16 @@ import { ProductListComponent } from './containers/product-list/product-list.com
 import { ProductDetailsComponent } from './containers/product-details/product-details.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ProductComponent } from './components/product/product.component';
+import { ChangeColorDirective } from './change.directive';
 
 @NgModule({
-  declarations: [ProductListComponent, ProductDetailsComponent, ProductsComponent, ProductComponent],
+  declarations: [
+    ProductListComponent,
+    ProductDetailsComponent,
+    ProductsComponent,
+    ProductComponent,
+    ChangeColorDirective
+  ],
   imports: [
     CommonModule,
     ProductRoutingModule

@@ -6,7 +6,7 @@ import { Product } from '../../models/product';
   template: `
   <div class="row">
     <div class="col-lg-3" *ngFor="let product of products">
-        <app-product [product]="product" [details]="false"></app-product>
+        <app-product [appChangeColor]="product" [product]="product" [details]="false"></app-product>
     </div>
 </div>
   `,
