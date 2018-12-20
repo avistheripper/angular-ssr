@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Product } from '../../models/product';
+import { GitService } from '../../services/git-api.serive';
 
 @Component({
   selector: 'app-products',
@@ -13,10 +14,15 @@ import { Product } from '../../models/product';
   styles: []
 })
 export class ProductsComponent implements OnInit {
+  private users: Array<any> = [];
   @Input () public products: Product[];
-  constructor() { }
+  constructor(
+    private gitService: GitService
+  ) { }
 
   ngOnInit() {
+    this.gitService.getUsers()
+      .subscribe(data => this.users = data);
   }
 
 }
